@@ -1,0 +1,4 @@
+E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base-n-Converter.vbprojAssemblyReference.cache
+E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base_n_Converter.basenconverter.resources
+E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base_n_Converter.Resources.resources
+E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base-n-Converter.vbproj.GenerateResource.cache
