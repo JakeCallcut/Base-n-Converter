@@ -2,3 +2,10 @@ E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base-n-Converter.vbprojAs
 E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base_n_Converter.basenconverter.resources
 E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base_n_Converter.Resources.resources
 E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base-n-Converter.vbproj.GenerateResource.cache
+E:\Programming\Visual Basic\Base-n-Converter\bin\Debug\Base-n-Converter.exe.config
+E:\Programming\Visual Basic\Base-n-Converter\bin\Debug\Base-n-Converter.exe
+E:\Programming\Visual Basic\Base-n-Converter\bin\Debug\Base-n-Converter.pdb
+E:\Programming\Visual Basic\Base-n-Converter\bin\Debug\Base-n-Converter.xml
+E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base-n-Converter.exe
+E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base-n-Converter.xml
+E:\Programming\Visual Basic\Base-n-Converter\obj\Debug\Base-n-Converter.pdb

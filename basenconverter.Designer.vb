@@ -66,6 +66,7 @@ Partial Class basenconverter
         '
         Me.txtin.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtin.Location = New System.Drawing.Point(277, 133)
+        Me.txtin.MaxLength = 8
         Me.txtin.Name = "txtin"
         Me.txtin.Size = New System.Drawing.Size(169, 26)
         Me.txtin.TabIndex = 4
