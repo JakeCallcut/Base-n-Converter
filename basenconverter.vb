@@ -17,6 +17,7 @@
 
         Dim counter As Integer
         Dim i As Integer
+        Dim index As Integer
 
         If cmbxin.SelectedIndex() = 0 Then                                  'collects input type
             inputtype = "dec"
@@ -74,7 +75,10 @@
 
                 Dim inhalf1 As String
                 Dim inhalf2 As String
-                Dim output As String
+                Dim outhalf1 As String = ""
+                Dim outhalf2 As String = ""
+                Dim totalcount As Integer
+                Dim output As String = ""
                 Dim hexrep(16) As Char                                         'populates hexadecimal representatives
                 hexrep(1) = "1"
                 hexrep(2) = "2"
@@ -92,12 +96,47 @@
                 hexrep(14) = "e"
                 hexrep(15) = "f"
 
+                Dim binaryrep(8) As Integer                                 'populates binary representatives
+                binaryrep(1) = 1
+                binaryrep(2) = 2
+                binaryrep(3) = 4
+                binaryrep(4) = 8
+                binaryrep(5) = 16
+                binaryrep(6) = 32
+                binaryrep(7) = 64
+                binaryrep(8) = 128
+
                 inhalf1 = input.Substring(0, 4)
                 inhalf2 = input.Substring(3, 4)
 
-                For i = 1 To inhalf1.length()
-                    '''''''''''''''''''''''''''''''''''''''''''''''''last edit
-                Next
+                For i = 1 To inhalf1.Length
+
+                    If inhalf1.Substring(inhalf1.Length - i, 1) = "1" Then
+
+                        totalcount = totalcount + binaryrep(i)
+
+                    ElseIf input.Substring(inhalf1.Length - i, 1) = "0" Then
+
+                    End If
+                    outhalf1 = hexrep(totalcount)
+                Next i
+
+                totalcount = 0
+
+                For index = 1 To inhalf2.Length
+
+                    If inhalf2.Substring(inhalf2.Length - index, 1) = "1" Then
+
+                        totalcount = totalcount + binaryrep(index)
+
+                    ElseIf input.Substring(inhalf2.Length - index, 1) = "0" Then
+
+                    End If
+                    outhalf2 = hexrep(totalcount)
+                Next index
+
+                output = outhalf1 & outhalf2
+                rhtxtout.Text = output
 
             ElseIf outputtype = "dec" Then
 
@@ -111,7 +150,6 @@
                 binaryrep(6) = 32
                 binaryrep(7) = 64
                 binaryrep(8) = 128
-
 
                 For i = 1 To input.Length
                     If input.Substring(input.Length - i, 1) = "1" Then
