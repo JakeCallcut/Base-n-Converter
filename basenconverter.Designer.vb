@@ -35,7 +35,7 @@ Partial Class basenconverter
         'Labeltitle
         '
         Me.Labeltitle.AutoSize = True
-        Me.Labeltitle.Font = New System.Drawing.Font("Times New Roman", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Labeltitle.Font = New System.Drawing.Font("Times New Roman", 24.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Labeltitle.Location = New System.Drawing.Point(229, 9)
         Me.Labeltitle.Name = "Labeltitle"
         Me.Labeltitle.Size = New System.Drawing.Size(356, 55)
@@ -124,7 +124,7 @@ Partial Class basenconverter
         Me.Controls.Add(Me.lblout)
         Me.Controls.Add(Me.Labeltitle)
         Me.Name = "basenconverter"
-        Me.Text = "Form1"
+        Me.Text = "Base-n Converter"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

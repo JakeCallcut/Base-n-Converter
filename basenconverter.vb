@@ -14,10 +14,8 @@
         Dim outputtype As String = ""
         Dim inarray(999) As Char
         Dim outarray(999) As Char
-        Dim input As String = ""
 
         Dim counter As Integer
-        Dim index As Integer
         Dim i As Integer
 
         If cmbxin.SelectedIndex() = 0 Then                                  'collects input type
@@ -36,6 +34,7 @@
             outputtype = "bin"
         End If
 
+        Dim input As String = ""
         input = txtin.Text
         ReDim Preserve inarray(input.Length())                                      'shortens array
 
@@ -61,7 +60,6 @@
 
             If outputtype = "hex" Then
                 Dim output As String
-
                 output = input
                 rhtxtout.Text = output
             End If
@@ -70,10 +68,36 @@
 
             If outputtype = "bin" Then
                 Dim output As Integer
-
                 output = input
                 rhtxtout.Text = output
             ElseIf outputtype = "hex" Then
+
+                Dim inhalf1 As String
+                Dim inhalf2 As String
+                Dim output As String
+                Dim hexrep(16) As Char                                         'populates hexadecimal representatives
+                hexrep(1) = "1"
+                hexrep(2) = "2"
+                hexrep(3) = "3"
+                hexrep(4) = "4"
+                hexrep(5) = "5"
+                hexrep(6) = "6"
+                hexrep(7) = "7"
+                hexrep(8) = "8"
+                hexrep(9) = "9"
+                hexrep(10) = "a"
+                hexrep(11) = "b"
+                hexrep(12) = "c"
+                hexrep(13) = "d"
+                hexrep(14) = "e"
+                hexrep(15) = "f"
+
+                inhalf1 = input.Substring(0, 4)
+                inhalf2 = input.Substring(3, 4)
+
+                For i = 1 To inhalf1.length()
+                    '''''''''''''''''''''''''''''''''''''''''''''''''last edit
+                Next
 
             ElseIf outputtype = "dec" Then
 
@@ -107,4 +131,5 @@
 
 
     End Sub
+
 End Class
