@@ -48,12 +48,39 @@
 
             If outputtype = "dec" Then
                 Dim output As Integer
-
                 output = input
                 rhtxtout.Text = output
             ElseIf outputtype = "hex" Then
 
             ElseIf outputtype = "bin" Then
+                Dim output As String = ""
+                Dim remaining As Integer
+                remaining = input
+
+                Do While remaining <> 0
+
+                    If remaining Mod 2 = 1 Then
+                        output = output & "1"
+                        remaining = remaining \ 2
+                    ElseIf remaining Mod 2 = 0 Then
+                        output = output & "0"
+                        remaining = remaining \ 2
+                    End If
+
+                Loop
+
+                If output.Length() < 8 Then
+                    Dim leading0s As Integer
+                    leading0s = 8 - output.Length()
+
+                    For i = 1 To leading0s
+                        output = "0" & output
+                    Next
+
+                    rhtxtout.Text = output
+                Else
+                    rhtxtout.Text = output
+                End If
 
             End If
 
@@ -73,7 +100,7 @@
                 Dim output As Integer
                 output = input
                 rhtxtout.Text = output
-            ElseIf outputtype = "hex" Then
+            ElseIf outputtype = "hex" Then                                     'bin to hex
 
                 Dim inhalf1 As String
                 Dim inhalf2 As String
@@ -140,7 +167,7 @@
                 output = outhalf1 & outhalf2
                 rhtxtout.Text = output
 
-            ElseIf outputtype = "dec" Then
+            ElseIf outputtype = "dec" Then                                  'dec to bin
 
                 Dim output As Integer
                 Dim binaryrep(8) As Integer                                 'populates binary representatives

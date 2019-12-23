@@ -1,0 +1,11 @@
+E:\Programming\Visual Basic\Base-n-Converter\bin\Release\Base-n-Converter.exe.config
+E:\Programming\Visual Basic\Base-n-Converter\bin\Release\Base-n-Converter.exe
+E:\Programming\Visual Basic\Base-n-Converter\bin\Release\Base-n-Converter.pdb
+E:\Programming\Visual Basic\Base-n-Converter\bin\Release\Base-n-Converter.xml
+E:\Programming\Visual Basic\Base-n-Converter\obj\Release\Base-n-Converter.vbprojAssemblyReference.cache
+E:\Programming\Visual Basic\Base-n-Converter\obj\Release\Base_n_Converter.basenconverter.resources
+E:\Programming\Visual Basic\Base-n-Converter\obj\Release\Base_n_Converter.Resources.resources
+E:\Programming\Visual Basic\Base-n-Converter\obj\Release\Base-n-Converter.vbproj.GenerateResource.cache
+E:\Programming\Visual Basic\Base-n-Converter\obj\Release\Base-n-Converter.exe
+E:\Programming\Visual Basic\Base-n-Converter\obj\Release\Base-n-Converter.xml
+E:\Programming\Visual Basic\Base-n-Converter\obj\Release\Base-n-Converter.pdb
