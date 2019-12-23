@@ -63,6 +63,8 @@
                 Dim output As String
                 output = input
                 rhtxtout.Text = output
+            ElseIf outputtype = "dec" Then
+
             End If
 
         ElseIf inputtype = "bin" Then
@@ -89,12 +91,12 @@
                 hexrep(7) = "7"
                 hexrep(8) = "8"
                 hexrep(9) = "9"
-                hexrep(10) = "a"
-                hexrep(11) = "b"
-                hexrep(12) = "c"
-                hexrep(13) = "d"
-                hexrep(14) = "e"
-                hexrep(15) = "f"
+                hexrep(10) = "A"
+                hexrep(11) = "B"
+                hexrep(12) = "C"
+                hexrep(13) = "D"
+                hexrep(14) = "E"
+                hexrep(15) = "F"
 
                 Dim binaryrep(8) As Integer                                 'populates binary representatives
                 binaryrep(1) = 1
@@ -107,7 +109,7 @@
                 binaryrep(8) = 128
 
                 inhalf1 = input.Substring(0, 4)
-                inhalf2 = input.Substring(3, 4)
+                inhalf2 = input.Substring(4, 4)
 
                 For i = 1 To inhalf1.Length
 
@@ -170,4 +172,10 @@
 
     End Sub
 
+    Private Sub btnclr_Click(sender As Object, e As EventArgs) Handles btnclr.Click
+
+        txtin.Text = ""
+        rhtxtout.Text = ""
+
+    End Sub
 End Class

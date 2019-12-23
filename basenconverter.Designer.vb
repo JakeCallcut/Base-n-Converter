@@ -30,6 +30,7 @@ Partial Class basenconverter
         Me.cmbxout = New System.Windows.Forms.ComboBox()
         Me.cmbxin = New System.Windows.Forms.ComboBox()
         Me.btnconvert = New System.Windows.Forms.Button()
+        Me.btnclr = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Labeltitle
@@ -110,11 +111,24 @@ Partial Class basenconverter
         Me.btnconvert.Text = "Convert"
         Me.btnconvert.UseVisualStyleBackColor = True
         '
+        'btnclr
+        '
+        Me.btnclr.BackColor = System.Drawing.SystemColors.Control
+        Me.btnclr.Font = New System.Drawing.Font("Times New Roman", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnclr.Location = New System.Drawing.Point(163, 381)
+        Me.btnclr.Name = "btnclr"
+        Me.btnclr.Size = New System.Drawing.Size(122, 57)
+        Me.btnclr.TabIndex = 9
+        Me.btnclr.Text = "Clear"
+        Me.btnclr.UseVisualStyleBackColor = False
+        '
         'basenconverter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnclr)
         Me.Controls.Add(Me.btnconvert)
         Me.Controls.Add(Me.cmbxin)
         Me.Controls.Add(Me.cmbxout)
@@ -138,4 +152,5 @@ Partial Class basenconverter
     Friend WithEvents cmbxout As ComboBox
     Friend WithEvents cmbxin As ComboBox
     Friend WithEvents btnconvert As Button
+    Friend WithEvents btnclr As Button
 End Class
